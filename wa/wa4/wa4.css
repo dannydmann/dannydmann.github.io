@@ -11,7 +11,7 @@ body {
   }
   
   
-/* Chris's card styles */
+/* Chris's card styles + spacing styles for my card */
   
   .card, .card2 {
     width: 35em;
@@ -46,6 +46,8 @@ body {
     float: right;
   }
 
+/* text styles for h2 and p */
+
 h2 {
     margin: 0;
     font-size: 2em;
@@ -63,7 +65,7 @@ p {
     line-height: 1.5em;
 }
 
-/* My card styles */
+/* My card styles (added onto chris's card styles) */
 
 .card2 {
     background-color: rgb(0, 255, 106);
@@ -71,7 +73,6 @@ p {
   .card2 article {
     background-color: rgba(77, 198, 253, 0.44);
   }
-  
 
 .card2 article p {
     color: rgb(0, 0, 0);
