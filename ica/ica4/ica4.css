@@ -1,0 +1,43 @@
+      body {
+        background-color: #fff;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      h1 {
+        color: #e12fdb;
+        font-size: 2em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        border-bottom: 10px solid purple;
+        border-bottom-style: dotted;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        font-style: italic;
+      }
+
+      .job-title {
+        color: #999999;
+        font-weight: bold;
+      }
+
+      a:link,
+      a:visited {
+        color: #fb6542;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: green;
+      }
+
+      .contacts {
+        background-color: #eeeeee;
+        border-width: 5px;
+        border-style: solid;
+        border-color: purple;
+        padding: 1%;
+      }
