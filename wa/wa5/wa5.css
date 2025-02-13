@@ -1,0 +1,32 @@
+#bottomimage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+#leftover {
+    position: absolute;
+    left: 4em;
+    top: 28em;
+    z-index: 1;
+    width: 6em;
+}
+
+#rightover {
+    position: absolute;
+    left: 50em;
+    top: 28em;
+    z-index: 1;
+    width: 6em;
+
+}
+
+h1 {
+    position: absolute;
+    size: 20em;
+    left: 12em;
+    top: 14em;
+    z-index: 1;
+    color: white;
+}
