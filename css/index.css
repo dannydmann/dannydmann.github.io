@@ -97,7 +97,7 @@ strong {
     gap: 5px;
     grid-column: span 2;
     padding: 5px;
-    grid-row: span 2;
+    grid-row: span ;
 }
 
 footer {
@@ -150,7 +150,7 @@ footer {
         font-size: 1.2vw;
     }
     .desc p {
-        font-size: 1vw;
+        font-size: clamp(12px, 1vw, 20px)
     }
 }
 
