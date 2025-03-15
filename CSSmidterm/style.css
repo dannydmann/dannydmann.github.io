@@ -16,8 +16,8 @@ body{
 header {
     font-family: Goldman, Tahoma, sans-serif;
     font-weight: 400;
-    position: sticky;
     top: 0;
+    position: sticky;
     background-color: purple;
     color: white;
     padding: 30px;
@@ -39,8 +39,8 @@ strong {
 .container {
     display: grid;
     padding: 6vw;
-    grid-auto-rows: minmax(auto, max-content);
     align-items: start;
+    grid-auto-rows: minmax(auto, max-content);
 }
 
 .concert {
