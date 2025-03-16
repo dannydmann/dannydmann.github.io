@@ -107,7 +107,7 @@ footer {
     color: white;
     text-align: center;
     padding: 30px;
-    font-size: 1vw;
+    font-size: clamp (12px, 2vw, 2opx)
 }
 
 #myBtn {
