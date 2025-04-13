@@ -34,6 +34,14 @@ html {
     border-bottom: 1px solid #ebebeb;
   }
   
+  footer {
+    width: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    text-align: center;
+    padding: 15px;
+  }
   .quotes {
     padding: 20px 50px;
     min-height: 200px;
