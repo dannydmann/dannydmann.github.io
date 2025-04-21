@@ -11,30 +11,12 @@ body {
 .container {
   position: relative;
 }
-​
-.text {
-
-  filter: url(#sticker);
-  color: #999;
-  font-size: 4rem;
-  font-weight: bold;
-
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  outline: none;
-}
-​
-.text:focus {
-  outline: none;
-}
-
 
 .text {
   filter: url(#sticker);
-  color: #999;
+  color: black;
   font-size: 4rem;
   font-weight: bold;
-
   font-family: Arial, sans-serif;
   padding: 20px;
   outline: none;
