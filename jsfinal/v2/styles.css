@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&family=Gabarito:wght@400..900&family=Goldman:wght@400;700&display=swap');
+
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -10,9 +14,29 @@ body {
     text-align: center;
 }
 
+
+
+#fire-overlay {
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+
 h1 {
-    margin-bottom: 50px;
-    font-size: 20px;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 15px;
+    margin-top: 20px;
 }
 
 .container {
@@ -35,7 +59,7 @@ h1 {
     margin: 3px;
     background-color: white;
     color: black;
-    border: 2px solid black;
+    border: 4px solid black;
     font-size: 19px;
     font-weight: bold;
     cursor: pointer;
@@ -53,6 +77,9 @@ h1 {
 }
 
 .submit-btn {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 20px;
@@ -60,6 +87,9 @@ h1 {
 }
 
 #submit-message {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin-top: 14px;
     font-size: 18px;
     color: green;

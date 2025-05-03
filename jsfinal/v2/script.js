@@ -4,13 +4,27 @@ let intervals = [];
 let colorIntervals = [];
 let holdTimes = Array(buttons.length).fill(0);
 let pressStartTimes = Array(buttons.length).fill(0);
-const maxHoldTime = 4000; 
+const maxHoldTime = 4000;
 const rollSpeed = 80;
+
+function updateFireOverlay() {
+    let totalPercent = 0;
+    buttons.forEach(function(button, index) {
+        totalPercent += Math.min(holdTimes[index] / maxHoldTime, 1);
+    });
+
+    let avgPercent = totalPercent / buttons.length;
+
+    const fire = document.getElementById("fire-overlay");
+    if (fire) {
+        fire.style.opacity = avgPercent.toFixed(2);
+    }
+}
 
 buttons.forEach(function(button, index) {
     button.addEventListener("mousedown", function() {
         if (holdTimes[index] >= maxHoldTime) {
-            alert("The buttons got too hot! Refresh & try again!");
+            alert("The buttons got waaay too hot! Refresh to start over.");
             location.reload();
             return;
         }
@@ -34,10 +48,12 @@ buttons.forEach(function(button, index) {
             let gb = Math.floor(255 * (1 - percent));
             button.style.backgroundColor = `rgb(255, ${gb}, ${gb})`;
 
+            updateFireOverlay();
+
             if (elapsed >= maxHoldTime) {
                 clearInterval(intervals[index]);
                 clearInterval(colorIntervals[index]);
-                alert("The buttons got too hot! Refresh & try again!");
+                alert("The buttons got waaay too hot! Refresh to start over.");
                 location.reload();
             }
         }, 50);
@@ -53,6 +69,8 @@ buttons.forEach(function(button, index) {
 
         clearInterval(intervals[index]);
         clearInterval(colorIntervals[index]);
+
+        updateFireOverlay();
     });
 });
 
@@ -67,9 +85,10 @@ submitButton.addEventListener("click", function() {
 
     let phone = `(${nums.slice(0, 3).join('')}) ${nums.slice(3, 6).join('')}-${nums.slice(6).join('')}`;
 
-    if (confirm("This your number?: " + phone + ". Submit it?")) {
+    if (confirm("You entered the number: " + phone + ". This look right?")) {
         submitMsg.style.display = "block";
         submitMsg.style.color = "green";
-        submitMsg.textContent = "Thank you :)!";
+        submitMsg.textContent = "Thank you for submitting (and not breaking our system) :)";
+        setTimeout(() => location.reload(), 2000);
     }
 });
